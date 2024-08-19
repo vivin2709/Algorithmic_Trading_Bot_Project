@@ -1,31 +1,36 @@
-# Algorithmic Trading Bot Development Guide
+# Algorithmic Trading Bot Projects
 
-## Overview
+This repository contains three distinct algorithmic trading projects focused on developing, testing, and deploying automated trading strategies on the S&P 500 index. Each project explores a different trading technique, offering various approaches to build profitable and systematic trading systems.
 
-This guide is designed for Vaibhav and Vivin, both students interested in funding, investments, and quantitative finance. It will walk you through the development of an algorithmic trading bot using Python. The bot will analyze market data, make trading decisions, and execute trades automatically.
+## Table of Contents
+- [Project 1: Equal Weight Strategy](#project-1-equal-weight-strategy)
+- [Project 2: Momentum Trading Strategy](#project-2-momentum-trading-strategy)
+- [Project 3: Value Strategy](#project-3-value-strategy)
+- [License](#license)
 
-## Prerequisites
+## Project 1: Equal Weight Strategy
+This project implements an equal-weight portfolio strategy for the S&P 500. The strategy assigns an equal investment weight to all stocks in the index, rebalancing the portfolio periodically. It is designed to outperform the market-cap weighted strategy over long-term investment horizons.
 
-- Basic knowledge of Python programming
-- Understanding of financial markets and trading concepts
-- Familiarity with data analysis libraries like pandas and NumPy
+- **File**: `Equal_Weight_S&P.ipynb`
+- **Key Features**:
+  - Data collection of S&P 500 stocks.
+  - Portfolio rebalancing and performance tracking.
+  - Analysis of historical returns compared to market indices.
 
-## Tools and Libraries
+## Project 2: Momentum Trading Strategy
+The momentum strategy is based on the principle that assets with strong recent performance tend to continue performing well in the near future. This project develops a momentum-based trading algorithm for S&P 500 stocks.
 
-- Python 3.x
-- pandas
-- NumPy
-- TA-Lib (Technical Analysis Library)
-- ccxt (Cryptocurrency Exchange Trading Library)
-- matplotlib (for data visualization)
-- Jupyter Notebook (optional, for interactive development)
+- **File**: `Momentum_Strategy_S&P.ipynb`
+- **Key Features**:
+  - Identification of stocks with positive momentum.
+  - Trade execution based on momentum signals.
+  - Performance evaluation against the S&P 500 benchmark.
 
-## Step 1: Setting Up the Environment
+## Project 3: Value Strategy
+This project focuses on implementing a value investing strategy that identifies undervalued stocks within the S&P 500. The strategy uses fundamental analysis to determine stocks trading below their intrinsic value.
 
-1. **Install Python and pip**:
-   Make sure you have Python 3.x installed on your machine. You can download it from [python.org](https://www.python.org/). Pip, the Python package installer, should be installed along with Python.
-
-2. **Create a Virtual Environment**:
-   ```bash
-   python -m venv trading_bot_env
-   source trading_bot_env/bin/activate  # On Windows use `trading_bot_env\Scripts\activate`
+- **File**: `Value_Strategy_S&P.ipynb`
+- **Key Features**:
+  - Stock screening based on valuation metrics (e.g., P/E ratios).
+  - Portfolio construction using value-weighted methods.
+  - Backtesting to assess historical performance.
